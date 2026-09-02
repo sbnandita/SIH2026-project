@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0B0D0F;
+    --bg-secondary: #101316;
+    --bg-card: #15191C;
+    --crimson: #C51F4A;
+    --crimson-dark: #8F1637;
+    --crimson-pastel: #E85A7A;
+  }
+
+  body {
+    background-color: #0B0D0F;
+    color: #FFFFFF;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Space Grotesk', 'Rajdhani', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #22272B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8F1637;
+}
+
+/* Theme Background Styling */
+.bg-theme-midnight {
+  background: radial-gradient(circle at 50% 0%, #1c060d 0%, #0B0D0F 70%);
+}
+
+.bg-theme-forest {
+  background: radial-gradient(circle at 80% 20%, #151a14 0%, #0d1210 40%, #0B0D0F 80%);
+}
+
+.bg-theme-ocean {
+  background: radial-gradient(circle at 20% 80%, #09131e 0%, #0c1117 50%, #0B0D0F 85%);
+}
+
+.bg-theme-aurora {
+  background: linear-gradient(135deg, #180913 0%, #0d1117 50%, #130a10 100%);
+}
+
+.bg-theme-sunset {
+  background: radial-gradient(circle at 50% 100%, #200d14 0%, #120c10 50%, #0B0D0F 90%);
+}
+
+.bg-theme-dark_void {
+  background-color: #050607;
+  background-image: linear-gradient(#15191c 1px, transparent 1px), linear-gradient(90deg, #15191c 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -1px -1px;
+}
+
+.bg-theme-galaxy {
+  background: radial-gradient(circle at 30% 30%, #22081c 0%, #0e0714 45%, #0B0D0F 85%);
+}
+
+.bg-theme-cyber {
+  background: linear-gradient(180deg, #0B0D0F 0%, #101316 50%, #170b13 100%);
+  position: relative;
+}
+
+.bg-theme-neon {
+  background: radial-gradient(circle at 50% 50%, #290814 0%, #101316 60%, #0B0D0F 100%);
+}
+
+.bg-theme-mountain {
+  background: linear-gradient(180deg, #0e1216 0%, #130f14 40%, #0B0D0F 90%);
+}
+
+.bg-theme-rain {
+  background: repeating-linear-gradient(0deg, #0B0D0F, #0B0D0F 2px, #101316 2px, #101316 4px);
+}
+
+/* Glassmorphism Cards */
+.fitron-card {
+  background: #15191C;
+  border: 1px solid #22272B;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.2s ease-in-out;
+}
+
+.fitron-card-hover:hover {
+  border-color: rgba(197, 31, 74, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(197, 31, 74, 0.25);
+}
+
+/* Glowing Crimson Buttons */
+.btn-crimson {
+  background: linear-gradient(135deg, #C51F4A 0%, #8F1637 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(197, 31, 74, 0.3);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-crimson:hover {
+  background: linear-gradient(135deg, #E85A7A 0%, #C51F4A 100%);
+  box-shadow: 0 6px 25px rgba(197, 31, 74, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-crimson:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  background: #15191C;
+  border: 1px solid #22272B;
+  color: #FFFFFF;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #1D2226;
+  border-color: rgba(197, 31, 74, 0.3);
+}
+
+/* Rank Badge Styles */
+.badge-bronze { color: #CD7F32; border-color: rgba(205, 127, 50, 0.4); background: rgba(205, 127, 50, 0.1); }
+.badge-silver { color: #C0C0C0; border-color: rgba(192, 192, 192, 0.4); background: rgba(192, 192, 192, 0.1); }
+.badge-gold { color: #FFD700; border-color: rgba(255, 215, 0, 0.4); background: rgba(255, 215, 0, 0.1); }
+.badge-platinum { color: #E5E4E2; border-color: rgba(229, 228, 226, 0.4); background: rgba(229, 228, 226, 0.1); }
+.badge-diamond { color: #00F0FF; border-color: rgba(0, 240, 255, 0.4); background: rgba(0, 240, 255, 0.1); }
